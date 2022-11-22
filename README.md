@@ -18,3 +18,8 @@ For each column:
 
 3. app.py
 * Flask app to host prediction front-end
+
+## Conclusions from EDA
+
+1. The resale prices increases over the years as expected - Year of transaction will be an important feature
+2. The quarter (Q1- Q4) in which the sale is made seems to have minimal effect on resale price
