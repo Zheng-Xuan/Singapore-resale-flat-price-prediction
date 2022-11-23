@@ -19,6 +19,22 @@ For each column:
 3. app.py
 * Flask app to host prediction front-end
 
+## About the dataset 
+
+The dataset consist of resale flat prices in Singapore from 1990 to 1999 obtained from Kaggle.
+
+Number of datapoints: 287196
+
+Columns:
+* month - yyyy-mm of resale transaction
+* town - the town in which the resale flat belong to
+* flat type - type of flat in which the hdb unit
+* block - blk number in address of flat
+* street_name - street in address of flat
+* floor_area_sqm - size of flat in square meters
+* lease_commence_date - yyyy in which flat lease begin
+* resale_price - price at which the resale flat was sold
+
 ## Conclusions from EDA
 
 **Month**
