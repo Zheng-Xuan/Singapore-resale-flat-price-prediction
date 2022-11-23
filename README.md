@@ -52,3 +52,11 @@ For each column:
 
 13. The resale prices vary largely according to flat model as expected - **Flat model will be an important feature**
 14. There are some models which are under represented (e.g. Improved-maisoneete, Multi-Generation, Premium Apartment, etc.)
+
+**Lease commence date**
+
+15. The resale prices vary proportionately according to lease commence date - **Lease commence date will be an important feature**
+
+**Resale price**
+
+16. The resale prices appear to follow a right skewed distribution as expected - probabilities of higher resale price decreases
