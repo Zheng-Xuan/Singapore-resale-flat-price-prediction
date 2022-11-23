@@ -51,7 +51,7 @@ Columns:
 **Flat type**
 
 6. The resale prices vary largely according to flat types as expected - **Flat type will be an important feature**
-7. Some flat types have fewer data points and may lead to poorer predictions (i.e. 1-room, 2-room and Multigeneration) - Consider removing these data points to improve robustness of prediction
+7. Some flat types have fewer data points and may lead to poorer predictions (i.e. 1-room, 2-room and Multigeneration)
 
 **Storey range**
 
