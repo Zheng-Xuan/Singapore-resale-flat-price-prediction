@@ -39,6 +39,16 @@ For each column:
 
 **Storey range**
 
-8. The resale prices vary largely according to storey range as expected - **storey range will be an important feature**
+8. The resale prices vary largely according to storey range as expected - **Storey range will be an important feature**
 9. Some storey ranges have fewer data points and may lead to poorer predictions (i.e. > 16 storey)
 10. Grouping the storey ranges into 4 groups - low, mid, high and very high help to improve the numbers and also help to preserve the trends in resale price
+
+**Floor area**
+
+11. The resale prices vary largely according to floor area as expected - **Floor area will be an important feature**
+12. There are some rows with floor areas that are rather large (> 200 sqm), these belong to old HDB Maisonettes and Terraces
+
+**Flat model**
+
+13. The resale prices vary largely according to flat model as expected - **Flat model will be an important feature**
+14. There are some models which are under represented (e.g. Improved-maisoneete, Multi-Generation, Premium Apartment, etc.)
