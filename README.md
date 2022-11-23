@@ -23,7 +23,7 @@ For each column:
 
 The dataset consist of resale flat prices in Singapore from 1990 to 1999 obtained from Kaggle.
 
-Number of datapoints: 287196
+Number of rows: 287196
 
 Columns:
 * month - yyyy-mm of resale transaction
