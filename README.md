@@ -79,4 +79,4 @@ Columns:
 
 ## **Model** 
 
-A random forest regressor and xgboost regressor was trained, and improved using hyperparameter tuning. The xgboost regressor performed better (achieving a lower RMSE score) and thus will be chosen as the model used for the backend engine in making predictions
+A random forest regressor and xgboost regressor was trained, and improved using hyperparameter tuning. The **xgboost regressor** performed better (achieving a lower RMSE score) and thus will be chosen as the model used for the backend engine in making predictions
