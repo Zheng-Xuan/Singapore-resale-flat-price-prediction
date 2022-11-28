@@ -19,7 +19,7 @@ For each column:
 3. app.py
 * Flask app to host prediction front-end
 
-## About the dataset 
+## **About the dataset**
 
 The dataset consist of resale flat prices in Singapore from 1990 to 1999 obtained from Kaggle.
 
@@ -35,7 +35,7 @@ Columns:
 * lease_commence_date - yyyy in which flat lease begin
 * resale_price - price at which the resale flat was sold
 
-## Conclusions from EDA
+## **Conclusions from EDA**
 
 **Month**
 
@@ -76,3 +76,7 @@ Columns:
 **Resale price**
 
 16. The resale prices appear to follow a right skewed distribution as expected - probabilities of higher resale price decreases
+
+## **Model** 
+
+A random forest regressor and xgboost regressor was trained, and improved using hyperparameter tuning. The xgboost regressor performed better (achieving a lower RMSE score) and thus will be chosen as the model used for the backend engine in making predictions
