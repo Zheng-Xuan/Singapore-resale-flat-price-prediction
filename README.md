@@ -1,24 +1,5 @@
 # Singapore-Resale-Flat-Price-Prediction
 
-Project plan:
-
-1. EDA.ipynb
-
-For each column:
-* explore blank rows
-* distribution of data
-* effect on resale price (Engineer features if required)
-* Provide visualizations
-
-2. model_training.ipynb
-* Feature engineering and selection 
-* Dummy regressor (baseline)
-* RandomForest (with optimized parameters)
-* XGBoost 
-
-3. app.py
-* Flask app to host prediction front-end
-
 ## **About the dataset**
 
 The dataset consist of resale flat prices in Singapore from 1990 to 1999 obtained from Kaggle.
@@ -80,3 +61,21 @@ Columns:
 ## **Model** 
 
 A random forest regressor and xgboost regressor was trained, and improved using hyperparameter tuning. The **xgboost regressor** performed better (achieving a lower RMSE score) and thus will be chosen as the model used for the backend engine in making predictions
+
+## **Test it out**
+
+* Install the required libraries
+
+```
+pip install -r requirements.txt
+```
+
+* Run the app
+
+```
+python app.py
+```
+
+* Copy the url and paste it in a web browser
+
+* Input the necessary information regarding the flat and press predict to get an estimated resale price for the flat!
