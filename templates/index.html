@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Singapore Resale Flat Price Predictor</title>
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+    <div id="container" style="text-align:center">
+      <h1>Singapore resale flat price prediction</h1>
+      <h2>Input your flat details</h2><br>
+
+      <form action="{{ url_for('predict')}}" method="POST">
+        <h3><label for="town">Town</label></h3>
+        <select id="town" name="town_value" style="width: 200px" required>
+            <option value="ANG MO KIO">Ang Mo Kio</option>
+            <option value="BEDOK">Bedok</option>
+            <option value="BISHAN">Bishan</option>
+            <option value="BUKIT BATOK">Bukit Batok</option>
+            <option value="BUKIT MERAH">Bukit Merah</option>
+            <option value="BUKIT PANJANG">Bukit Panjang</option>
+            <option value="BUKIT TIMAH">Bukit Timah</option>
+            <option value="CENTRAL AREA">Central Area</option>
+            <option value="CHOA CHU KANG">Choa Chu Kang</option>
+            <option value="CLEMENTI">Clementi</option>
+            <option value="GEYLANG">Geylang</option>
+            <option value="HOUGANG">Hougang</option>
+            <option value="JURONG EAST">Jurong East</option> 
+            <option value="JURONG WEST">Jurong West</option>
+            <option value="KALLANG/WHAMPOA">Kallang/Whampoa</option>
+            <option value="LIM CHU KANG">Lim Chu Kang</option>
+            <option value="MARINE PARADE">Marine Parade</option>
+            <option value="PASIR RIS">Pasir Ris</option>
+            <option value="QUEENSTOWN">Queenstown</option>
+            <option value="SEMBAWANG">Sembawang</option>
+            <option value="SENGKANG">Sengkang</option>
+            <option value="SERANGOON">Serangoon</option>
+            <option value="TAMPINES">Tampines</option>
+            <option value="TOA PAYOH">Toa Payoh</option>
+            <option value="WOODLANDS">Woodlands</option>
+            <option value="YISHUN">Yishun</option>
+        </select>
+
+        <h3><label for="flat-type">Flat Type</label></h3>
+        <select id="flat-type" name="flat-type_value" style="width: 200px" required>
+            <option value="1 ROOM">1 Room</option>
+            <option value="2 ROOM">2 Room</option>
+            <option value="3 ROOM">3 Room</option>
+            <option value="4 ROOM">4 Room</option>
+            <option value="5 ROOM">5 Room</option>
+            <option value="EXECUTIVE">Executive</option>
+            <option value="MULTI GENERATION">Multi Generation</option>
+        </select>
+
+        <h3><label for="floor-area">Floor Area (sqm)</label></h3>
+        <input type="number" id="floor-area" name="floor-area_value" style="width: 200px" placeholder="Enter flat floor area" step="any" requried>
+
+        <h3><label for="year-of-sale">Year of Sale</label></h3>
+        <input type="number" id="year-of-sale" name="year-of-sale_value" min="1900" max="2099" step="1" style="width: 200px" required>
+
+        <h3><label for="storey-range">Storey Range</label></h3>
+        <select id="storey-range" name="storey-range_value" style="width: 200px" required>
+            <option value="01 TO 03">01 to 03</option>
+            <option value="04 TO 06">04 to 06</option>
+            <option value="07 TO 09">07 to 09</option>
+            <option value="10 TO 12">10 to 12</option>
+            <option value="13 TO 15">13 to 15</option>
+            <option value="16 TO 18">16 to 18</option>
+            <option value="19 TO 21">19 to 21</option>
+            <option value="22 TO 24">22 to 24</option>
+            <option value="25 TO 27">25 to 27</option>
+        </select>
+
+        <h3><label for="year-of-lease-commence">Lease Commencement Year</label></h3>
+        <input type="number" id="year-of-lease-commence" name="lease-commence-year_value" min="1900" max="2099" step="1" style="width: 200px" required>
+        <br><br>
+
+        <button type="submit">Predict</button>
+      </form>
+
+      <h4>{{ prediction_text }}</h4>
+    </div>
+
+  </body>
+</html>
